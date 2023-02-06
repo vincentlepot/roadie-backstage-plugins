@@ -21,7 +21,7 @@ import Ajv from 'ajv';
 import ajvFormats from 'ajv-formats';
 import { relativeSpaceValidation } from './relativeSpaceValidation';
 
-const ajv = new Ajv({ verbose: true });
+const ajv = new Ajv({ verbose: true, strict: true });
 ajvFormats(ajv);
 
 const VALIDATORS = {
